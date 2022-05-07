@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Withings Garmin Sync</title>
+    <meta name="description" content="Tool to synchronise data from Withings to Garmin Connect.">
+    <meta name="author" content="taylorhoward92">
+
+    <meta property="og:title" content="Withings Garmin Sync">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taylorhoward92.github.io">
+    <meta property="og:description" content="Tool to synchronise data from Withings to Garmin Connect.">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="section">
+            <div id="notification" class="notification" style="display: none;"></div>
+            <h1 class="title">Withings Grant Code</h1>
+            <div class="field has-addons">
+                <div class="control">
+                    <input id="grant-code" class="input" type="text" placeholder="Withings grant code" disabled>
+                </div>
+                <div class="control">
+                    <button class="button is-info" onclick="setClipboard();">
+                        <span class="icon">
+                          <i class="fa fa-copy"></i>
+                        </span>
+                        <span>Copy</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
